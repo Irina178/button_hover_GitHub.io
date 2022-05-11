@@ -1,0 +1,25 @@
+.container {
+  padding: 0px 15px;
+  width: 320px;
+  margin: 0 auto;
+    
+}
+@media screen and (min-width: 320px) {
+  .container {
+    min-width: 375px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .container {
+    min-width: 1170px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
