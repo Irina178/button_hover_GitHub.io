@@ -1,10 +1,10 @@
-@import './base/container';
-@import './base/common';
+ @import './base/common';
+ @import './base/container';
 
-@import './utils/veriables';
-@import './utils/modern-normalise';
+ @import './utils/modern-normalise';
+ @import './utils/veriables';
 
-@import './components/header';
-@import './components/footer';
+ @import './components/header';
+ @import './components/footer';
 
-@import'./layout/studies';
+ @import './layout/categories';

@@ -1,0 +1,80 @@
+ 
+ 
+ @media screen and (min-width: 720px){
+   .categories {
+      padding: 80px 0px 80px;
+      background-color: $bc;
+   
+   &__heading{
+      text-align: center;
+      font-size: 30px;
+      line-height: 1;
+      font-weight: 600;
+      text-align: center;
+    padding-bottom: 30px;
+   }
+   &__color{
+      color: $orange;
+   }
+   .type {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap:15px;
+     justify-items: center;
+   }}
+   .icon {
+         &__one {
+            background-image: url("../img/categories/01.jpg");
+           background-repeat: no-repeat;
+           width: 220px;
+         height: 280px;
+         border-radius: 20px;
+         
+         }
+   
+         &__text {
+            font-size: 25px;
+                line-height: 1;
+                font-weight: 600;
+                color: white ;
+                padding-top: 225px;
+                text-align: center;
+         }
+   
+         &__two {
+            background-image: url("../img/categories/02.jpg");
+            background-repeat: no-repeat;
+            width: 220px;
+          height: 280px;
+          border-radius: 20px;
+         }
+   
+         &__three {
+            background-image: url("../img/categories/03.jpg");
+            background-repeat: no-repeat;
+            width: 220px;
+          height: 280px;
+          border-radius: 20px;
+         }
+   
+         &__four {
+            background-image: url("../img/categories/04.jpg");
+            background-repeat: no-repeat;
+            width: 220px;
+          height: 280px;
+          border-radius: 20px;
+         }
+   }
+   
+
+ }
+ @media screen and (min-width: 1200px){
+   .categories {
+      padding: 100px 0px 100px;
+     
+   }
+   .type {
+    display: flex;
+    justify-content: space-evenly;
+    } 
+ }
