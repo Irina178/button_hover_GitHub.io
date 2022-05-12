@@ -20,29 +20,31 @@
 display: none;
          // &__image {
          //    }
-   .app {
+      }
+         .app {
+display: flex;
+margin-top: 28px;
+            &__link {
+               font-size: 14px;
+               font-weight: 600;
+               line-height: 1.5;
+               padding: 11px 25px;
+               background-color: $orange;
+               color:$white;
+               border-radius: 30px;
+               margin-right: 20px;
+              
+            }
+      }
+      .button {
       display: flex;
       align-items: center;
-            &__link {
-            font-size: 14px;
-            font-weight: 600;
-            line-height: 1.5;
-            color: #fff;
-            background-color: #ff6428;
-            padding: 11px 35px;
-            border-radius: 30px;
-            margin-right: 20px;
-         }
-   }
-   .button {
-   display: flex;
-   align-items: center;
-         &__svg:first-child {
-            margin-right: 20px;
-         }
-   }
-   
-}
+            &__svg {
+               width: 25px;
+               height: 25px;
+            }
+      }
+      
 }}
 @media screen and (min-width: 720px){
    .search {

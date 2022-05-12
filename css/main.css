@@ -17,8 +17,6 @@ body {
   padding: 0px 15px;
   width: 320px;
   margin: 0 auto;
-  border-left: 1px solid red;
-  border-right: 1px solid red;
 }
 
 @media screen and (min-width: 320px) {
@@ -854,25 +852,23 @@ img {
   .search .decor {
     display: none;
   }
-  .search .decor .app {
+  .search .app {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    margin-top: 28px;
   }
-  .search .decor .app__link {
+  .search .app__link {
     font-size: 14px;
     font-weight: 600;
     line-height: 1.5;
-    color: #fff;
+    padding: 11px 25px;
     background-color: #ff6428;
-    padding: 11px 35px;
+    color: #FFFFFF;
     border-radius: 30px;
     margin-right: 20px;
   }
-  .search .decor .button {
+  .search .button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -880,8 +876,9 @@ img {
         -ms-flex-align: center;
             align-items: center;
   }
-  .search .decor .button__svg:first-child {
-    margin-right: 20px;
+  .search .button__svg {
+    width: 25px;
+    height: 25px;
   }
 }
 
@@ -1317,7 +1314,7 @@ img {
     width: 468px;
     height: 533px;
     position: absolute;
-    top: -380px;
+    top: -409px;
     left: 715px;
   }
   .favorite .rhythm__heading {
