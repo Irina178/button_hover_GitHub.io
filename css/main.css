@@ -533,8 +533,8 @@ img {
     background-color: #FFFFFF;
   }
   .search__heading {
-    padding: 0px 0px 30px;
-    font-size: 32px;
+    padding: 0px 0px 28px;
+    font-size: 28px;
     line-height: 1;
     font-weight: 600;
     color: #121212;
@@ -701,11 +701,10 @@ img {
   }
   .brands__heading {
     padding-bottom: 35px;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 1;
     font-weight: 600;
     color: #121212;
-    margin-right: 10px;
   }
   .brands__color {
     color: #ff6428;
@@ -913,6 +912,97 @@ img {
     font-weight: 400;
     color: #666666;
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .favorite {
+    background-color: #FFFFFF;
+    padding: 70px 0px 70px;
+  }
+  .favorite__heading {
+    padding-bottom: 35px;
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 600;
+    color: #121212;
+  }
+  .favorite__color {
+    color: #ff6428;
+  }
+  .market {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .market__list:first-child {
+    margin-right: 5px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .favorite {
+    padding: 90px 0px 90px;
+  }
+  .favorite__heading {
+    padding-bottom: 45px;
+    font-size: 32px;
+    line-height: 1.3;
+    text-align: start;
+    padding-top: 160px;
+    margin-right: 260px;
+  }
+  .favorite__color {
+    color: #ff6428;
+  }
+  .favorite .picture {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .favorite .picture__img {
+    width: 368px;
+    height: 433px;
+    position: absolute;
+    top: -330px;
+    left: 334px;
+  }
+  .favorite .rhythm__heading {
+    padding-top: 130px;
+    margin-right: 250px;
+  }
+  .favorite .market {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .favorite .market__list {
+    width: 115px;
+    height: 35px;
+  }
+  .favorite .market__list:first-child {
+    margin-right: 5px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .favorite__heading {
+    font-size: 48px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #121212;
+    margin-right: 550px;
+  }
+  .favorite__color {
+    color: #ff6428;
+  }
+  .picture__img {
+    width: 468px;
+    height: 533px;
+    position: absolute;
+    top: -330px;
+    left: 675px;
   }
 }
 /*# sourceMappingURL=main.css.map */
