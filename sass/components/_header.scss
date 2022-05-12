@@ -1,0 +1,54 @@
+@media screen and (min-width: 720px){
+   .header {
+      background-color: $bc;
+   }
+   
+   .wraper {
+   padding: 62px 0px;
+   display: flex;
+   &__logo{
+      margin-right: 60px;
+   }
+   }
+   .nav {
+      display: flex;
+     
+         &__list:nth-child(2) {
+            margin: 0px 30px;
+         }
+   
+         &__link {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.5;
+            color: $color-text;
+         }
+   }
+   }
+@media screen and (min-width: 1200px){
+.header {
+   background-color: $bc;
+}
+ 
+.wraper {
+padding: 62px 0px;
+display: flex;
+&__logo{
+   margin-right: 131px;
+}
+}
+.nav {
+   display: flex;
+  
+		&__list:nth-child(2) {
+         margin: 0px 56px;
+		}
+
+		&__link {
+         font-size: 16px;
+         font-weight: 600;
+         line-height: 1.5;
+         color: $color-text;
+		}
+}
+}
