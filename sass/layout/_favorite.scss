@@ -66,57 +66,73 @@ display: flex;
 }
  
 .market {
-   
-display: flex;
-
+   display: flex;
 
 &__list {
-   width: 115px;
-   height: 35px;
-   
-}
-		&__list:first-child {
-       
-         margin-right: 5px;
-		}
+   margin-right: 15px;
+  }
+	 
 
-		 
+      &__image {
+         width: 115px;
+         height: 34px;
+		}	 
+      
 }
 }}
 @media screen and (min-width: 1200px ){
    .favorite {
+     
+      padding: 90px 0px 90px;
+      &__heading{
+         padding-bottom: 45px;
+         font-size: 45px;
+         line-height: 1.3;
+         text-align: start;
+         padding-top: 160px;
+         margin-right: 562px;
+
+      }
+      &__color{
+         color:$orange;
+
+}
+
+.picture {
+   position: relative;
+   display: flex;
+    
+ &__img{
+   width: 468px;
+   height: 533px;
+   position: absolute;
+   top: -380px;
+   left: 715px;
+ }
+}
+
+
+.rhythm {
 
 		&__heading {
-       font-size: 48px;
-       line-height: 1.3;
-       font-weight: 600;
-       color: $black;
-       margin-right: 550px;
-		}
-
-		&__color {
-         color: $orange;
+         padding-top: 130px;
+         margin-right: 250px;
 		}
 }
  
-.picture {
- 
-		&__img {
-         width: 468px;
-    height: 533px;
-   position: absolute;
-   top: -330px;
-   left: 675px;
+.market {
+   display: flex;
+
+&__list {
+   margin-right: 25px;
+  }
+	 
+
+      &__image {
+         width: 115px;
+         height: 34px;
+		}	 
       
-		}
 }
-// .market {
-
-// 		&__list {
-// 		}
-
-// 		&__image {
-// 		}
-// }
-
-}
+}}
+ 
