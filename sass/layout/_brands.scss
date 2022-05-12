@@ -8,7 +8,11 @@ background-color: $bc;
          line-height: 1;
          font-weight: 600;
          color: $black;
+         margin-right: 10px;
 		}
+      &__color{
+         color: $orange;
+      }
 }
  
 .name {
@@ -25,13 +29,17 @@ gap:5px;
 }
 
 }
-@media screen and (min-width: 120px ){
+@media screen and (min-width: 720px ){
      .brands {
       padding: 90px 0px 90px;
 		&__heading {
          padding-bottom: 45px;
          font-size: 45px;
+         text-align: center;
+         margin-right: 0px;
+       
 		}
+     
 }
  
 .name {
