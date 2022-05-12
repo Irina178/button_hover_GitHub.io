@@ -1,11 +1,111 @@
+@media screen and (min-width: 320px){
+   .search {
+      padding: 0px 0px 50px;
+      background-color: $bc;
+		&__heading {
+         padding: 0px 0px 30px;
+         font-size: 32px;
+         line-height: 1;
+         font-weight: 600;
+         color: #121212;
+		}
+
+		&__text {
+         font-size: 12px;
+         font-weight: 600;
+         line-height: 1.5;
+         color: $color-text;
+        }
+      .decor {
+display: none;
+         // &__image {
+         //    }
+   .app {
+      display: flex;
+      align-items: center;
+            &__link {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.5;
+            color: #fff;
+            background-color: #ff6428;
+            padding: 11px 35px;
+            border-radius: 30px;
+            margin-right: 20px;
+         }
+   }
+   .button {
+   display: flex;
+   align-items: center;
+         &__svg:first-child {
+            margin-right: 20px;
+         }
+   }
+   
+}
+}}
 @media screen and (min-width: 720px){
- 
+   .search {
+      padding: 0px 0px 100px;
+      background-color: $bc;
+		&__heading {
+         font-size: 44px;
+         line-height: 1;
+         font-weight: 600;
+         color: #121212;
+         margin-right: 275px;
+		}
+
+		&__text {
+         font-size: 14px;
+         font-weight: 600;
+         line-height: 1.5;
+         color: $color-text;
+         margin: 15px 324px 14px 0px;
+          
+		}
+      .decor {
+        display: block;
+position: relative;
+         &__image {
+            width: 472px;
+            height: 386px;
+            position: absolute;
+            top: -154px;
+            left: 410px;
+         }
+   }
+   .app {
+      display: flex;
+      align-items: center;
+   
+   
+         &__link {
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 1.5;
+            color: #fff;
+            background-color: #ff6428;
+            padding: 11px 35px;
+            border-radius: 30px;
+            margin-right: 20px;
+         }
+   }
+   .button {
+   display: flex;
+   align-items: center;
+         &__svg:first-child {
+            margin-right: 20px;
+         }
+   }
+   
+}
 
 }
 @media screen and (min-width: 1200px){
    .search {
       padding: 0px 0px 160px;
-      background-color: $bc;
+      
 		&__heading {
         font-size: 56px;
         line-height: 1;
@@ -33,18 +133,9 @@ position: relative;
             left: 662px;
          }
    }
-
-   
- 
- 
-
-
-
-
    .app {
       display: flex;
-   }
-   .search {
+   
    
          &__link {
             font-size: 16px;
@@ -64,4 +155,5 @@ position: relative;
          }
    }
    
-}}
+}
+}
