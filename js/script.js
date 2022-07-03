@@ -32,14 +32,14 @@ const isMobile = {
 if (isMobile.any()) {
    document.body.classList.add('_touch');
    let menuArrows = document.querySelectorAll('.menu__arrow');
-   if (menuArrows.length>0){
-      for (let index = 0; index < menuArrows.length; index++){
-         const menuArrow  = menuArrows[index];
-         menuArrow.addEventListener('click', function(e) {
+   if (menuArrows.length > 0) {
+      for (let index = 0; index < menuArrows.length; index++) {
+         const menuArrow = menuArrows[index];
+         menuArrow.addEventListener('click', function (e) {
             menuArrow.parentElement.classList.toggle('_active')
          }
-            
-          )
+
+         )
       }
    }
 } else {
@@ -51,22 +51,41 @@ if (isMobile.any()) {
 const menuLinks = document.querySelectorAll('.menu__link[data-goto]')
 // проверка есть ли такие классы
 
-if( menuLinks.length>0){
-   menuLinks.forEach(menuLink=>{
+if (menuLinks.length > 0) {
+   menuLinks.forEach(menuLink => {
       menuLink.addEventListener('click', onMenuLinkClick);
 
    });
-   function onMenuLinkClick(e){
+   function onMenuLinkClick(e) {
       const menuLink = e.target;
-      if(menuLink.dataset.goto &&document.querySelector(menuLink.dataset.goto )){
-const gotoBlock = document.querySelector(menuLink.dataset.goto);
-const gotoBlockValue  = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
+      if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
+         const gotoBlock = document.querySelector(menuLink.dataset.goto);
+         const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
+if (iconMenu.classList.contains('_active')){
+    document.bodu.classList.remov('_lock');
+    iconMenu.classList.remove('_active');
+    menuBodu.classList.remove('_active');
 
-window.scrollTo({
-   top: gotoBlockValue,
-   behavior: "smooth"
-});
-e.preventDefault();
+
+
+}
+         window.scrollTo({
+            top: gotoBlockValue,
+            behavior: "smooth"
+         });
+         e.preventDefault();
       }
    }
+}
+//Меню бургер
+const iconMenu = document.querySelector('.menu__icon');
+const menuBodu = document.querySelector('.menu__bodu');
+if (iconMenu) {
+
+   iconMenu.addEventListener('click', function (e) {
+    
+      iconMenu.classList.toggle('_active');
+      menuBodu.classList.toggle('_active');
+   })
+
 }
