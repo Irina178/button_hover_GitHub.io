@@ -61,14 +61,14 @@ if (menuLinks.length > 0) {
       if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
          const gotoBlock = document.querySelector(menuLink.dataset.goto);
          const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
-if (iconMenu.classList.contains('_active')){
-    document.bodu.classList.remov('_lock');
-    iconMenu.classList.remove('_active');
-    menuBodu.classList.remove('_active');
+         if (iconMenu.classList.contains('_active')) {
+            document.bodu.classList.remov('_lock');
+            iconMenu.classList.remove('_active');
+            menuBodu.classList.remove('_active');
 
 
 
-}
+         }
          window.scrollTo({
             top: gotoBlockValue,
             behavior: "smooth"
@@ -83,9 +83,12 @@ const menuBodu = document.querySelector('.menu__bodu');
 if (iconMenu) {
 
    iconMenu.addEventListener('click', function (e) {
-    
+
       iconMenu.classList.toggle('_active');
       menuBodu.classList.toggle('_active');
    })
 
 }
+ 
+
+ 
